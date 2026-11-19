@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; 55 trophies</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="tagline">Every trophy, its guide and its sources, with a tracker and a roadmap to the platinum. Works offline; your progress never leaves this browser.</p>
+  </div>
+  <div class="progress" aria-label="Progress">
+    <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+    <p id="progressText" class="progress-text">0 of 55 earned &middot; 0%</p>
+    <p id="gradeCount" class="grade-count"></p>
+  </div>
+</header>
+
+<section class="controls" aria-label="Filters and progress tools">
+  <input id="search" type="search" placeholder="Search trophies, missions, places&hellip;" aria-label="Search trophies">
+  <label>Grade
+    <select id="gradeFilter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label>Kind
+    <select id="kindFilter">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="side">Side content</option>
+      <option value="collectible">Collectibles</option>
+      <option value="activity">Activities</option>
+      <option value="robbery">Robberies</option>
+      <option value="exploration">Exploration</option>
+    </select>
+  </label>
+  <label>Status
+    <select id="statusFilter">
+      <option value="all">Earned and unearned</option>
+      <option value="earned">Earned only</option>
+      <option value="unearned">Unearned only</option>
+    </select>
+  </label>
+  <label class="check"><input id="missableOnly" type="checkbox"> Missable only</label>
+  <label class="check"><input id="hiddenOnly" type="checkbox"> Hidden only</label>
+  <label class="check"><input id="spoilerToggle" type="checkbox"> Hide spoilers</label>
+  <span class="tools">
+    <button id="exportBtn" type="button">Export progress</button>
+    <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+    <button id="resetBtn" type="button">Reset</button>
+  </span>
+</section>
+
+<section class="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum</h2>
+  <p class="roadmap-intro">Six phases, in order. One playthrough is enough: there are no online trophies and only one trophy can be missed. Keep a manual save at the start of every chapter; the game has 15 slots plus one autosave, and no mission replay.</p>
+  <div id="roadmap" class="phases"></div>
+</section>
+
+<main>
+  <h2>Trophies <span id="resultCount" class="result-count"></span></h2>
+  <p class="hint">Click a trophy to open its guide. Tick the box when you earn it; your progress is saved in this browser and can be exported to a file.</p>
+  <div id="list" class="trophy-list"></div>
+</main>
+
+<footer>
+  <h2>Sources and notes</h2>
+  <p>Official trophy names, descriptions and grades are as PlayStation publishes them, as listed by Exophase and PSNProfiles. Guides are written in our own words for this entry and cite their sources by name beside each trophy: PlayStation, Exophase, PSNProfiles, PowerPyx, GTABase, Output Lag, EGamers, GTAVibes, KeenGamer, OfZenAndComputing and GTAViceCityHub. Launch-era details (the Chapter 1 meditation, the Yago race, the unconfirmed triggers) come from Output Lag, PowerPyx and GTABase, checked against each other where they agree.</p>
+  <p>Cheats are reported to switch off trophies and saving, so keep them off your trophy save. No Rockstar Games logo, artwork or screenshot is used anywhere in this guide; the look is our own.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
